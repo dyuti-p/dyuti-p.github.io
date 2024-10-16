@@ -1,0 +1,59 @@
+html {
+    background-color: rgba(117, 87, 48, 0.205);
+    padding: 10%;
+}
+
+.center {
+    text-align: center;
+}
+
+#index {   
+    font-family: Palatino;
+    background-color: rgb(247, 246, 229);
+    margin: 5px;
+    padding: 15px;
+    text-align: left;
+}
+
+body {  
+    /*   border-width: 5px;
+      border-color: black;
+      border-style: solid; */
+      margin: 10px;
+      padding: 40px;
+}
+
+/* #fixed-position-wrapper {
+    position: fixed;
+    background-color: lightgrey;
+    width: 63vh;
+    height: 70vh;
+} */
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 75%;
+    height: 60%;
+    font-size: 25px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 14%; 
+}
+
+td {
+    width: 1000px;
+}
+
+.dear {
+    font-style: italic;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+}
