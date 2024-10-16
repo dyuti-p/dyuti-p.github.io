@@ -48,3 +48,9 @@ th, td {
 td {
     width: 1000px;
 }
+
+.redirect {
+    position: absolute;
+    left: 13%;
+    bottom: 20%;
+  }
