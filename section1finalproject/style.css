@@ -1,22 +1,50 @@
 html {
-    background-color: bisque;
+    background-color: rgb(209, 229, 175);
+    padding: 10%;
+}
 
-#envelope { 
+.center {
+    text-align: center;
+}
+
+#index {   
+    font-family: Palatino;
+    background-color: rgb(247, 246, 229);
+    margin: 5px;
+    padding: 15px;
+    text-align: left;
+}
+
+body {  
+    /*   border-width: 5px;
+      border-color: black;
+      border-style: solid; */
+      margin: 10px;
+      padding: 40px;
+}
+
+/* #fixed-position-wrapper {
     position: fixed;
-    top: 50%
-    right: 50%;
-}   
+    background-color: lightgrey;
+    width: 63vh;
+    height: 70vh;
+} */
 
-#stamp { 
-    position: relative;
-    bottom: 0px;
-    width: 20px;
-    height: 20px;
-}   
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 75%;
+    height: 60%;
+    font-size: 25px;
+}
 
-/* img {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-  } */
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 14%; 
+}
 
-
+td {
+    width: 1000px;
 }
