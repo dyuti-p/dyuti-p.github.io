@@ -1,0 +1,160 @@
+body {
+    background-color: rgba(117, 87, 48, 0.205);
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+}
+
+.wrapper {
+    position: relative;
+    background-color: rgb(247, 246, 229);
+    padding: 20px;
+    width: 700px; 
+    height: 70vh; 
+    text-align: center;
+}
+
+.pbottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* calendar */
+.center {
+    text-align: center;
+    
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 600px;
+    height: 400px;
+    font-size: 25px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+    width: 14%; 
+}
+
+th {
+    font-size: 18px;
+    font-weight:normal
+}
+
+td {
+    width: 1000px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    padding: 18px;
+    cursor: pointer;
+}
+
+a:hover {
+    transform: rotate(50deg); 
+    color: brown; 
+}
+
+/* letter */
+
+.letterwrapper {
+    position: relative;
+    background-color: rgb(247, 246, 229);
+    padding: 20px;
+    width: 700px; 
+    height: 70vh;
+    overflow: auto;
+}
+
+.dear {
+    font-style: italic;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+}
+
+/* webring */
+.webring {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    width: 300px;
+    height: auto;
+}
+
+/* back and next buttons */
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    float: left;
+    width: 70px;
+    height: auto;
+}
+
+.next-button {
+    display: inline-block;
+    margin: 20px; /* Adds space from the content above */
+    float: right; /* Align button to the right */
+    width: 70px;
+    height: auto;
+}
+
+/* .bottom-left-button {
+    display: inline-block;
+    margin-top: 20px;
+    float: left;
+    width: 60px;
+    height: auto;
+} */
+
+
+.back-button:hover {
+    transform: rotate(10deg);
+    transform: translate(-10px,-2px);
+  }
+  
+.back-button {
+      filter: drop-shadow(1px 1px 3px #2323269f);
+}
+
+.next-button:hover {
+    transform: rotate(10deg);
+    transform: translate(10px,-2px);
+  }
+  
+.next-button {
+      filter: drop-shadow(1px 1px 3px #2323269f);
+}
+
+.home {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(1px 1px 3px #2323269f);
+}
+
+.home:hover {
+    transform: rotate(5deg);
+}
