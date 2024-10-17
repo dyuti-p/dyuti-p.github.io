@@ -2,7 +2,7 @@ body {
     background-color: rgba(117, 87, 48, 0.205);
     margin: 0;
     padding: 0;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,20 +112,11 @@ a:hover {
 
 .next-button {
     display: inline-block;
-    margin: 20px; /* Adds space from the content above */
-    float: right; /* Align button to the right */
+    margin: 20px; 
+    float: right; 
     width: 70px;
     height: auto;
 }
-
-/* .bottom-left-button {
-    display: inline-block;
-    margin-top: 20px;
-    float: left;
-    width: 60px;
-    height: auto;
-} */
-
 
 .back-button:hover {
     transform: rotate(10deg);
