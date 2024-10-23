@@ -7,14 +7,15 @@ body {
 }
 
 h1 {
-    margin: 0;
-    font-size: 3em;
-    letter-spacing: -4px;
-    padding: 30px; 
+    margin: 10px;
+    font-size: 2em;
+    letter-spacing: -2px;
+    padding: 0px; 
     z-index: 3;
     position: relative;
     background-color: #FFFFFF;
 }
+
 
 /* Gallery*/
 .gallery {
