@@ -106,7 +106,6 @@ h1 {
 /* viewport */
 @media (max-width: 768px) {
     .gallery {
-        flex-direction: column;
         gap: 50px;
         margin: 20px;
         padding: 20px;
