@@ -8,8 +8,8 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 2em;
-    letter-spacing: -2px;
+    font-size: 3em;
+    letter-spacing: -4px;
     padding: 30px; 
     z-index: 3;
     position: relative;
