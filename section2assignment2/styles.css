@@ -108,5 +108,7 @@ h1 {
     .gallery {
         flex-direction: column;
         gap: 50px;
+        margin: 20px;
+        padding: 20px;
     }
 }
