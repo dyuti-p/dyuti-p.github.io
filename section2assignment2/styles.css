@@ -1,0 +1,112 @@
+/* body */
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: -2px;
+    padding: 0px; 
+    z-index: 3;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.text-cover1 {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.text-cover2 {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+
+/* Gallery*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin: 0;
+}
+
+.artwork {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 300px;
+}
+
+.painting-container {
+    position: relative;
+    width: 100%;
+}
+
+.painting-container img {
+    width: 100%;
+    border: 15px solid #f8c732;
+    border-style: inset;
+}
+
+.overlay {
+    position: absolute;
+    width: 105%;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    padding: 15px;
+    text-align: left;
+    z-index: 0;
+  
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.painting-container img:hover + .overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* Label*/
+.painting-label {
+    font-size: 4px;
+    text-align: left;
+    margin-top: 10px;
+    padding: 10px;
+    width: 28%;
+    background-color: white;
+    border: 1px solid #000000;
+    border-style: solid;
+    cursor: text;
+  
+    transition: transform 0.5s ease-in-out; 
+    transform-origin: bottom left;
+}
+
+.painting-label:hover {
+    transform: scale(3);
+}
+
+/* viewport */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
