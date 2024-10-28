@@ -13,7 +13,6 @@ h1 {
     padding: 0px; 
     z-index: 3;
     position: relative;
-    background-color: #FFFFFF;
 }
 
 
@@ -35,17 +34,21 @@ h1 {
 .painting-container {
     position: relative;
     width: 100%;
+    overflow: hidden;
+    border: 15px solid #f8c732;
+    border-style: inset;
+    display: flex;
 }
 
 .painting-container img {
     width: 100%;
-    border: 15px solid #f8c732;
-    border-style: inset;
+    
 }
 
 .overlay {
     position: absolute;
-    width: 105%;
+    font-size: 14px;
+    width: calc(100% - 30px);
     inset: 0;
     background-color: rgba(255, 255, 255, 0.9);
     display: flex;
@@ -58,7 +61,7 @@ h1 {
     opacity: 0;
 }
 
-.painting-container img:hover + .overlay {
+.painting-container:hover > .overlay {
     transform: translateY(0);
     opacity: 1;
 }
@@ -70,7 +73,7 @@ h1 {
     text-align: left;
     margin-top: 10px;
     padding: 10px;
-    width: 28%;
+    width: 88.33333333px;
     background-color: white;
     border: 1px solid #000000;
     border-style: solid;
