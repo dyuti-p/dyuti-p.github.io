@@ -1,97 +1,251 @@
-/* body */
-body {
-    font-family: Helvetica, sans-serif;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
+  /* font */
+   
+  .instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-h1 {
-    margin: 10px;
-    font-size: 3em;
-    letter-spacing: -3px;
-    padding: 0px; 
-    z-index: 3;
-    position: relative;
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
-
-/* Gallery*/
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-    margin: 0;
+.inter {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.artwork {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-}
-
-.painting-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border: 15px solid #f8c732;
-    border-style: inset;
-    display: flex;
-}
-
-.painting-container img {
-    width: 100%;
-    
-}
-
-.overlay {
-    position: absolute;
-    font-size: 14px;
-    width: calc(100% - 30px);
-    inset: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    padding: 15px;
-    text-align: left;
-    z-index: 0;
-  
-    transform: translateY(-100%);
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-    opacity: 0;
-}
-
-.painting-container:hover > .overlay {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-
-/* Label*/
-.painting-label {
-    font-size: 4px;
-    text-align: left;
-    margin-top: 10px;
-    padding: 10px;
-    width: 88.33333333px;
-    background-color: white;
-    border: 1px solid #000000;
-    border-style: solid;
-    cursor: text;
-  
-    transition: transform 0.5s ease-in-out; 
-    transform-origin: bottom left;
-}
-
-.painting-label:hover {
-    transform: scale(3);
-}
-
-/* viewport */
-@media (max-width: 768px) {
-    .gallery {
-        gap: 50px;
-        margin: 20px;
-        padding: 20px;
+   * {
+      box-sizing: border-box;
     }
+
+    body {
+      box-sizing: border-box;
+      display: flex;
+      background-color: #D9D9D9;
+    }
+
+    /* sidebar */
+    .sidebar {
+      position: fixed;
+      top: 50px;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      padding: 30px;
+      border-right: 1.5px solid #000000;
+      font-family: "Instrument Serif", serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .homeicon {
+      height: 100px;
+      background: url('../images/homeicon.webp') no-repeat center center;
+      background-size: contain;
+    }
+
+    .homeicon:hover {
+    transform: rotate(-10deg);
+    }
+
+    
+    .sidebar hr {
+      width: 100%;
+      border: none;
+      border-top: 1.5px solid #000;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h3 {
+      margin: 15px 0;
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: 3px;
+      font-family: "Instrument Serif", serif;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+      color: #000000;
+      font-family: "Inter", serif;
+      font-size: 0.9em;
+      text-align: right;
+    }
+
+    .sidebar a:hover {
+      color: #F65058;
+    }
+
+    .link a {
+      color: #000000;
+    }
+
+    .link a:hover {
+      color: #F65058;
+    }
+
+/* main site content */
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  font-family: "Inter", serif;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* images */
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.image-container .image-border {
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #F65058;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.image-container .image-border:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.image-container .image-border .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container .image-border .overlay p {
+  color: white;
+  font-size: 2.2em;
+  font-family: "Instrument Serif", serif;
+  margin: 0;
+}
+
+.image-container .image-border:hover .overlay {
+  opacity: 1;
+}
+
+/* assignment content */
+.image-container-2 {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 50%;
+  height: 350px;
+  background-color: #ffffff;
+  border: 2px solid #F65058;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  color: #333;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #F65058;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Inter", serif;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.project-button:hover {
+  background-color: #ff7b82;
+}
+
+.content p {
+  font-family: "Inter", serif;
+  font-size: 0.9em;
+  font-style: normal;
+  line-height: 1.6;
+  width: 50%;
+}
+
+.content h3 {
+  font-size: 2em;
+  font-family: "Instrument Serif", serif;
+  margin-bottom: 30px;
+}
+
+
+.response h3 {
+  margin-top: 20px;
+  font-weight: normal;
+  width: 60%
+}
+
+.response p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* banner */
+
+    .banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #F65058;
+      color: #ffffff;
+      font-size: 1.2em;
+      font-family: "Instrument Serif", serif;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      z-index: 1000;
+    }
+
+    .banner .banner-text {
+      white-space: nowrap;
+      animation: scroll-left 35s linear infinite;
+    }
+
+    @keyframes scroll-left {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
